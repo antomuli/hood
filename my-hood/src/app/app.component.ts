@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-hood';
+  hoods:string[];
+
+  constructor(){
+    this.hoods = ['M-Town', 'Choclate city', 'K-west']
+  } 
 }

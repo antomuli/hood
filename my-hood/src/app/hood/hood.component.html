@@ -1,0 +1,10 @@
+<h1>My Hood</h1>
+<hr>
+<ul>
+  <div *ngFor='let hood of hoods;let i = index'>
+    <li>{{hood.name}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-hood-detail *ngIf='hood.showLocation' [hood]='hood' (isComplete) = 'completeHood($event,i)'></app-hood-detail>
+  </div>
+</ul>
+<p *ngIf='hoods.length > 5'>You have too many goals</p>

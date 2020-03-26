@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HoodComponent } from './hood/hood.component';
+import { HoodDetailComponent } from './hood-detail/hood-detail.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HoodComponent,
+    HoodDetailComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
